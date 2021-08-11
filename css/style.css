@@ -1,0 +1,156 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.profile {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.profile img{
+    width: 170px;
+    border-radius: 10%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-size:2rem;
+    line-height: 1;
+    color: #4e5150;
+    font-weight: 800;
+ }
+
+.location {
+    display: flex;
+    justify-content: center;
+    color:#a9a9a9;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+ }
+
+ .border {
+     
+     padding:20px;
+ }
+
+ .border1 {
+     width: 4.8rem;
+     padding: 0;
+     height: 3.26rem;
+     margin:0;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-color: #e5e5e5;
+     border-radius: 12px;
+ }
+ .border2 {
+    width: 4.8rem;
+    border-radius: 12px;
+
+    padding: 0;
+    height: 3.26rem;
+    margin:0;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color: #e5e5e5;
+}
+.border3 {
+    width: 4.8rem;
+    padding: 0;
+    border-radius: 12px;
+
+    height: 3.26rem;
+    margin:0;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color: #e5e5e5;
+}
+ 
+.border h2 {
+    color: #4e5150;
+    font-weight: bold;
+}
+
+.border p {
+    font-size: 0.85rem;
+    color:#a9a9a9;
+    font-weight: 900;
+}
+
+section {
+    margin:0 16%;
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap:10px;
+    
+}
+
+
+section img {
+    width: 450px;
+    height: 390px;
+}
+
+
+@media only screen and (max-width:1024px)
+{
+    section {
+        place-items: center;
+    
+    grid-template-columns: 
+    repeat(1, 1fr);
+}
+}
+
+@media only screen and (max-width:650px)
+{
+    section {
+        place-items: center;
+    
+    grid-template-columns: 
+    repeat(1, 1fr);
+}
+section img{
+    width:250px;
+    height: 240px;
+}
+}
+
+ 
+
+@media only screen and (max-width:350px)
+{
+    section img{
+       width:220px;
+       height: 210px;
+}
+}
+
+section img:hover {
+    opacity: 20%;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+@media only screen and (max-width:800px){
+    .border{
+        padding:12px;
+    }
+}
